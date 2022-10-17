@@ -1,0 +1,565 @@
+.watch {
+    background-image: url('./../../assets/images/giant-panda.jpg');
+    height: 385px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*donation*/
+.donation {
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    color: #FFFFFF;
+    padding-bottom: 180px;
+}
+
+.donation__title {
+    font-size: 36px;
+    line-height: 130%;
+    text-transform: uppercase;
+    padding: 40px 0 10px 0;
+}
+
+.donation__info {
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 500;
+}
+
+.donation__info span {
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.donation__subtitle {
+    padding: 50px 0 55px 0;
+    font-size: 36px;
+    line-height: 130%;
+    color: var(--color-lg-orange);
+}
+
+.pick {
+    padding: 40px 92px 62px 92px;
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+}
+
+.pick__title {
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--color-lg-orange);
+    padding: 0 10px 20px 0;
+}
+
+.pick__desc {
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--color-black-blue);
+    margin-bottom: 107px;
+}
+
+
+.pick__diet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    margin: 0 37px 50px 0;
+}
+
+.pick__count {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.pick__count-number{
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.pick__separation {
+    width: 14px;
+    height: 14px;
+    background-image: url('./../../assets/icons/x_icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 60px;
+    margin-bottom: 18px;
+}
+
+.pick__image {
+    height: 200px;
+    width: 268px;
+    background-image: url('./../../assets/icons/panda_icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pick__count-text {
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+.pick__another-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+    margin: 0 0 13px 5px;
+}
+
+.pick__amount-form-radio {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 21px;
+    margin: -30px 12px 0px 0;
+}
+
+.pick__amount-time {
+    display: flex;
+    gap: 10px;
+}
+
+.pick__amount-form-radio input,
+.pick__amount-form-radio label {
+    cursor: pointer;
+    color:  var(--color-black-blue);
+}
+
+.pick__amount-form-radio input {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--color-lg-orange);
+    background-color: transparent;
+    border-radius: 50%;
+    appearance: none;
+    margin-left: -2px;
+}
+
+.pick__amount-form-radio input:checked {
+    border: 1px solid var(--color-green);
+    background-color: var(--color-green);
+}
+
+.pick__btn {
+    margin: 30px auto;
+    padding-left: 15px;
+}
+
+.pick__amount-form {
+    position: relative;
+    text-align: center;
+}
+
+.pick__amount-bg {
+    height: 27px;
+    background: #404950;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 10px;
+}
+
+.pick__amount-points {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: 15px;
+}
+
+.pick__amount-points li{
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+    z-index: 1;
+    position: relative;
+}
+
+.pick__amount-range {
+    height: 2px;
+    width: 95%;
+    background-color: #72828E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin-left: 15px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 1px solid orange;
+}
+
+input[type="radio"]:checked {
+    border: none;
+}
+
+.pick__amount-bg input[type="radio"] {
+    width: 39px;
+    height: 39px;
+    margin: 0;
+    padding: 19px;
+    border: none;
+    z-index: 3;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    cursor: pointer;
+}
+
+.pick__amount-points li input[type="radio"]:checked {
+    border-radius: 50%;
+    border: 1px solid  var(--color-lg-orange);
+    outline: 1px solid var(--color-lg-orange);
+    outline-offset: -10px; 
+} 
+
+.pick__amount-list-current {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.donate-list__item {
+    display: flex;
+    width: 69px;
+    align-items: flex-end;
+}
+
+.donate-list-summ {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 80%;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--color-black-blue);
+    background-image:url('./../../assets/icons/usd.svg');
+    background-size: contain;
+    background-repeat:no-repeat;
+    padding-left: 10px;
+}
+
+.active.donate-list-summ{
+    color: var(--color-lg-orange);
+    background-image:url('./../../assets/icons/usd-color.svg');
+}
+
+.another__icon {
+    position: absolute;
+    background-image:url('./../../assets/icons/val.svg');
+    width: 10px;
+    height: 20px;
+    top: 20px;
+    right: 10px;
+}
+
+.pick__another-amount {
+    width: 268px;
+    position: relative;
+    margin: 50px auto;
+}
+
+.another__input {
+    width: 268px;
+    height: 54px;
+    padding: 0 30px 0 9px;
+    margin: 7px auto;
+    border: 1px solid #929699;
+    border-radius: 2px;
+    appearance: none;
+    color: #929699;
+    background: transparent;
+    font-size: 16px;
+    line-height: 140%;
+    outline: none;
+}
+
+.another__input::placeholder {
+    color: #929699;
+}
+
+.another__input::-webkit-outer-spin-button,
+.another__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.another__input:invalid {
+    color: var(--color-red);
+    border: 1px solid var(--color-red);
+}
+
+.another__input:invalid + label {
+    color: var(--color-red);
+}
+
+.another__input:focus:valid {
+    color:var(--color-green);
+    border: 1px solidvar(--color-green);
+}
+
+.another__input:focus:valid + label {
+    color:var(--color-green);
+}
+
+.pick__amount-text{
+    color: var(--color-black-blue);
+    line-height: 130%;
+    text-align: center;
+    margin-left: 2px;
+}
+
+@media (max-width: 1280px) { 
+    .watch {
+        height: 390px;
+        background-position-x: -170px;
+    }
+
+    .donation__title {
+        max-width: 778px;
+        padding: 40px 0 30px 0;
+    }
+
+    .donation__subtitle {
+        padding: 45px 0 40px 0;
+    }
+
+    .pick{
+        padding: 20px 44px 46px 47px;
+    }
+
+    .pick__title {
+        padding: 0 20px 10px 0;
+    }
+
+    .pick__another-text {
+        margin: 2px 0 15px 17px;
+    }
+
+    .pick__amount-bg {
+        margin: 0 20px;
+        padding: 0;
+    }
+
+    .donation {
+        padding-bottom: 30px;
+    }
+    .pick__amount-points li:first-child {
+        display: none;
+    }
+    .donate-list li:first-child {
+        display: none;
+    }
+    .pick__amount-list-current {
+        margin-left: 20px;
+    }
+    .donate-list__item {
+        width: 50px;
+    }
+} 
+
+    @media (max-width: 768px) { 
+        .watch {
+            margin-top: 34px;
+        }
+        .pick__image {
+            width: 272.5px;
+            height: 205.47px;
+            background-size: contain;
+        }
+        .pick__amount-points li:nth-child(2) {
+            display: none;
+        }
+        .donate-list li:nth-child(2){
+            display: none;
+        }
+        .watch {
+            height: 335px;
+            background-position-x: -270px;
+        }
+        .donation {
+            padding:0 43px 20px;
+        }
+        .donation__title {
+            font-size: 24px;
+            padding: 30px 0 20px 0;
+            line-height: 120%;
+        }
+        .donation__info {
+            max-height: 100%;
+        }
+        .donation__subtitle {
+            padding: 30px 0;
+        }
+        .pick {
+            padding: 30px 0 35px 0;
+        }
+        .pick__title  {
+            padding: 0 0 20px;
+        }
+        .pick__desc {
+            text-align: center;
+            margin-bottom: 95px;
+        }
+        .pick__diet {
+            margin: 0 48px 35px 0;
+        }
+        .pick__count {
+            margin-left: 24px;
+        }
+        .pick__another-text {
+            margin: 0 0 11px 10px;
+        }
+        .pick__amount-bg {
+            margin: -5px 0 0 0;
+            padding: 0;
+        }
+        .pick__amount-points li:nth-child(3) {
+            display: none;
+        }
+        .donate-list li:nth-child(3){
+            display: none;
+        }
+       .another__input{
+            width: 180px;
+            height: 42px;
+            padding: 0 30px 0 6px;
+            margin: 10px 0 10px 0;
+        } 
+        .pick__amount-list-current {
+            margin: 22px 10px 45px 20px;
+        }
+    
+         .pick__another-amount {
+            width: 180px;
+            margin: 23px auto;
+        } 
+        .pick__amount-form-radio {
+            margin: 0 14px 10px 0;
+        }
+        .pick__amount-range, .pick__amount-points {
+            width: 90%;
+            margin-left: 30px;
+        }
+        .pick__btn {
+            margin: 20px auto;
+        }
+        .pick__amount-text {
+            margin: 10px 0 0 0;
+        } 
+} 
+
+
+  @media (max-width: 639px){
+    .watch {
+        height: 187px;
+        background-position-x: -150px;
+    }
+    .donation {
+        padding: 0 5px 20px 5px;
+    }
+    .donation__subtitle {
+        font-size: 24px;
+        padding: 25px 0;
+    }
+    .pick {
+        padding: 25px 0 20px 0;
+    }
+    .pick__title{
+        font-size: 24px;
+        padding: 0 0 11px;
+    }
+    .pick__desc {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .pick__count-number {
+        font-size: 40.6px;
+    }
+    .pick__count-text {
+        font-size: 9.02px;
+    }
+    .pick__diet {
+        gap:5px;
+        margin: 0;
+    }
+    .pick__separation {
+        width: 8px;
+        height: 8px;
+        margin-right: 10px;
+    }
+    .pick__count { 
+        margin: 12px 0 0 0;
+    }
+    .pick__separation {
+        margin:  0 0 10px 5px;
+    }   
+    .pick__image {  
+        height: 111px;
+        width: 160px;
+        margin-left: 25px;
+    }
+    .pick__another-text {
+        margin: 5px 0 13px 0;
+    }
+    .pick__amount-bg {
+        height: 13.5px;
+    }
+    .pick__amount-bg input[type="radio"] {
+        width: 10px;
+        height: 10px;
+        padding: 10px;
+        right: -8px;
+        top: -8px; 
+    }
+    .pick__amount-range, .pick__amount-points {
+        margin-left: 15px;
+    }
+    .pick__amount-points li {
+        width: 6px;
+        height: 6px;
+    }
+    .pick__amount-points li input[type="radio"]:checked {
+        outline-offset: -9px;
+    }
+    .donate-list-summ {
+        font-size: 13px;
+    }
+    .donate-list__item {
+        width: 27px;
+    }
+    .pick__amount-list-current {
+        margin: 10px;
+    }
+    .another__input {
+        margin: 0;
+    }
+    .pick__another-amount {
+        margin: 27px auto;
+    }
+    .another__icon {
+        top: 12px;
+    }
+    .pick__amount-text {
+        font-size: 15.9px;
+    }
+}

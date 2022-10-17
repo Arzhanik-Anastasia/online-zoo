@@ -1,0 +1,58 @@
+
+[
+    {
+        "name": "fenek",
+        "image": "./assets/images/animals/fenek.jpg",
+        "native": "native to Africa"
+    },
+    {
+        "name": "lemur",
+        "image": "./assets/images/animals/lemur.jpg",
+        "native": "native to Africa"
+    },
+    {
+        "name": "lion",
+        "image": "./assets/images/animals/lion.jpg",
+        "native": "native to Africa"
+    },
+    {
+        "name": "lis",
+        "image": "./assets/images/animals/lis.jpg",
+        "native": "native to Africa"
+    },
+    {
+        "name": "zebra",
+        "image": "./assets/images/animals/zebra.jpg",
+        "native": "native to Africa"
+    },
+    {
+        "name": "cheetahs",
+        "image": "./assets/images/animals/cheetahs.png",
+        "native": "native to Africa"
+    },
+    {
+        "name": "eagles",
+        "image": "./assets/images/animals/eagles.png",
+        "native": "native to Africa"
+    },
+    {
+        "name": "gorillas",
+        "image": "./assets/images/animals/gorillas.png",
+        "native": "native to Africa"
+    },
+    {
+        "name": "panda",
+        "image": "./assets/images/animals/panda.png",
+        "native": "native to Africa"
+    },
+    {
+        "name": "sloth",
+        "image": "./assets/images/animals/sloth.png",
+        "native": "native to Africa"
+    },
+    {
+        "name": "pin",
+        "image": "./assets/images/animals/pin.png",
+        "native": "native to Africa"
+    }
+]
